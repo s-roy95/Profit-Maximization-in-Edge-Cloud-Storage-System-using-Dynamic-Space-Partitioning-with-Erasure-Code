@@ -1,0 +1,13 @@
+Split with Erasure Code Result 
+Total Request : 99999
+Total Hit Count : 0
+Total Miss Count : 99999
+Hit % : 0
+Profit : 0
+
+No Split with Erasure Code Result 
+Total Request : 99999
+Total Hit Count : 99999
+Total Miss Count : 0
+Hit % : 100
+Profit : 1011460
