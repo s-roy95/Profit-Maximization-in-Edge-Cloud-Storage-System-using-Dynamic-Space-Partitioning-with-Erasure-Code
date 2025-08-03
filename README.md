@@ -6,7 +6,7 @@ Erasure Code
 
 ## 📁 Directory Structure
 
-### 1. `Dataset/`
+### 1. `Datasets/`
 Contains all the datasets used in the experiments.
 
   - `RequestTrace.txt`: Synthetic Dataset generated for simulation.
@@ -16,26 +16,28 @@ Contains all the datasets used in the experiments.
 - **User Request/**
   - Each User Request contains 5 fields:
     - `arr_time`: arrival time of request.
-    - `c_id`: 5% deviation for existing tasks.
-    - `task_actual_10_percent_deviation.csv`: 10% deviation for existing tasks.
-    - `task_new_5_percent_deviation.csv`: 5% deviation with new unpredicted tasks.
-    - `task_new_10_percent_deviation.csv`: 10% deviation with new unpredicted tasks.
-
-
+    - `X_id`: Content id requested.
+    - `deadline`: deadline for the request.
+    - `AP`: Access Point on which request arrived .
+    - `Profit`: profit from the request.
 
 ---
 
 ### 2. `Code/`
-Contains the implementation of all scheduling algorithms.
+Contains the implementation of all algorithms.
 
-#### └─ `offline/`
-- `infinitebattery_offline.cpp`: Implements Algo 2 + Algo 4.
-- `finitebattery_offline.cpp`: Implements Algo 2 + Algo 6.
+- ` netflix.cpp`: for running code on real-life dataset i.e. for both netflix and spotify dataset.
+-   Load_Requests function is used to read dataset. Change file_name to run on specific file.
 
-#### └─ `online/`
-- `online_solar_infinite_battery.cpp`: Implements Algo 2 + Algo 4 + Algo 5.
-- `online_solar_finitebattery.cpp`: Implements Algo 2 + Algo 6 + Algo 5.
+-> " DSP.cpp ": Split No Erasure method. Read/generate real-life or synthetic dataset to run on sepefic dataset.
+-> " E and DSPE.cpp ": No Split with Erasure and Split with Erasure method. 
 
+-> E and DSPE is method in which we have tried to both
+	- (1) split into public and private section only.
+	- (2) split into public and private + spitting private section also (DSPE).
+	- used function nospilt for the first method.
+	- uesd function split for the second method. 
+	
 #### └─ `stateofart/`
 Baseline methods from the literature:
 - `NPEDF_*`: Non-preemptive Earliest Deadline First (finite/infinite battery).
