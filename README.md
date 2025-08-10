@@ -9,7 +9,7 @@ Erasure Code
 ### 1. `Datasets/`
 Contains all the datasets used in the experiments.
 
-  - `RequestTrace.txt`: Synthetic Dataset generated for simulation.
+  - `RequestTrace_0R.txt`: Dataset generated from DataGeneration.cpp
   - `netflix_input1`: Netflix Dataset.
   - `input1.txt`: Spotify dataset.
 
