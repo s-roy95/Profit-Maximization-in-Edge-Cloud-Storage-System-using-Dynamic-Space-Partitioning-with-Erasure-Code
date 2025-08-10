@@ -32,11 +32,11 @@ Contains all the datasets used in the experiments.
 ### 2. `Code/`
 Contains the implementation of all algorithms.
 
--> " DSP.cpp ": Split No Erasure method. Read/generate real-life or synthetic dataset to run on sepefic dataset.
--> " E and DSPE.cpp ": No Split with Erasure and Split with Erasure method. 
--> ` netflix.cpp`: for running code on real-life dataset i.e. for both netflix and spotify dataset.
-->   Load_Requests function is used to read dataset. Change file_name to run on specific file.
--> E and DSPE is method in which we have tried to both
+- " DSP.cpp ": Split No Erasure method. Read/generate real-life or synthetic dataset to run on sepefic dataset.
+- " E and DSPE.cpp ": No Split with Erasure and Split with Erasure method. 
+  - ` netflix.cpp`: for running code on real-life dataset i.e. for both netflix and spotify dataset.
+-   Load_Requests function is used to read dataset. Change file_name to run on specific file.
+  -   and DSPE is method in which we have tried to both
 	- (1) split into public and private section only.
 	- (2) split into public and private + spitting private section also (DSPE).
 	- used function nospilt for the first method.
