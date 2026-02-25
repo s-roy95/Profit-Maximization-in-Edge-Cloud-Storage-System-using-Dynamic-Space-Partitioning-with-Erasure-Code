@@ -18,6 +18,7 @@ Contains all the datasets used in the experiments.
   - `aP_eS_dis.txt`: direct connection indicator matrix for AP and ES.
   - `eS_eS_dis.txt`: direct connection indicator matrix for ES and ES.
   - `c_eS_dis.txt`: direct connection indicator matrix for CC and ES.
+  - `priv_pub_ratio.txt`: ratio of private;puvlic space in different ESs
    - 
 - **User Request/**
   - Each User Request contains 5 fields:
